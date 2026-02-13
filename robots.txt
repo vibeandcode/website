@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vibeandcode.com/sitemap.xml
+
+Disallow: /.vercel/
+Disallow: /.git/
+Disallow: /.claude/

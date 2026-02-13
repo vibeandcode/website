@@ -3,36 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FeelScape | Transform Your Mood Into Art & Sound</title>
+    <title>FeelScape | Personalized Affirmation & Mood Tracker App</title>
+    <meta name="description" content="Track your mood and get AI-generated affirmations written just for you. FeelScape offers 50+ moods, personalized daily affirmations 2.5x more effective than generic ones. Download free for iOS & Android.">
+    <meta name="keywords" content="mood tracker app, personalized affirmations app, daily affirmations, emotion tracker, AI affirmation app, self-care app, mental health app, wellness app, mood journal, feelings tracker">
+    <meta name="author" content="vibe&code">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vibeandcode.com/feelscape.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FeelScape — Personalized Affirmations Based on Your Mood">
+    <meta property="og:description" content="Track your mood. Get affirmations written just for you. Personalized, not generic — 2.5x more effective. Free for iOS & Android.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vibeandcode.com/feelscape.html">
+    <meta property="og:site_name" content="vibe&code">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FeelScape — Personalized Affirmations Based on Your Mood">
+    <meta name="twitter:description" content="Track your mood. Get affirmations written just for you. Personalized, not generic.">
+
+    <!-- Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "FeelScape",
+        "description": "A personalized affirmation and mood tracker app. Select from 50+ moods, get AI-generated affirmations tailored to how you feel right now. Personalized, not generic.",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS, Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "vibe&code",
+            "url": "https://vibeandcode.com"
+        },
+        "url": "https://vibeandcode.com/feelscape.html",
+        "downloadUrl": [
+            "https://apps.apple.com/us/app/feelscape-ai-affirmations/id6755970318",
+            "https://play.google.com/store/apps/details?id=com.vibercoder.feelscape"
+        ]
+    }
+    </script>
+
+    <!-- Structured Data: FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is FeelScape?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FeelScape is a personalized affirmation and mood tracker app. You select from 50+ moods across 8 emotional categories, and our AI instantly generates affirmations written specifically for how you feel right now — not generic quotes, but words tailored to your exact emotional state."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does FeelScape personalize affirmations?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FeelScape uses AI to analyze the specific moods you select and generates affirmations that directly address your current emotional state. Premium users get an AI Memory System that learns your patterns, values, and goals over time, making affirmations even more personal and effective."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What moods can I track with FeelScape?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FeelScape offers 50+ moods organized into 8 categories: Happy, Sad, Energy, Calm, Anxious, Angry, Physical, and more. From grateful and inspired to overwhelmed and restless — there is a mood for exactly how you feel."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is FeelScape free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, FeelScape is free to download and use. You get daily personalized affirmations at no cost. A premium subscription unlocks additional features like the AI Memory System, 15 daily affirmations, proactive check-ins, and unlimited mood logging."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How is FeelScape different from other affirmation apps?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most affirmation apps give you the same recycled quotes everyone else gets. FeelScape generates affirmations written specifically for your mood, every time. Research shows personalized affirmations are 2.5x more effective than generic ones. FeelScape also includes an AI Memory System that learns your emotional patterns over time."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is my mood data private?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. Your mood data is encrypted and never sold or shared with third parties. We do not use your personal inputs to train AI models without your explicit consent. You can export or delete your data at any time."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the AI Memory System?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The AI Memory System is a premium feature that learns your emotional patterns, values, goals, and coping strategies over time. It uses this understanding to generate increasingly personalized affirmations and proactive check-ins that meet you where you are."
+                }
+            }
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="feelscape-page">
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">vibe<span>&</span>code</a>
             <div class="nav-links">
-                <a href="index.html">← Back to Home</a>
+                <a href="index.html">Home</a>
+                <a href="support.html">Support</a>
             </div>
         </div>
     </nav>
 
-    <section class="app-hero">
-        <div class="app-hero-content">
-            <div class="app-hero-icon">🎨</div>
-            <h1>FeelScape</h1>
-            <p class="app-hero-tagline">Transform your mood into stunning art and immersive soundscapes</p>
-            <div class="app-hero-buttons">
-                <a href="#" class="store-button">
+    <!-- HERO -->
+    <section class="fs-hero" aria-label="FeelScape app overview">
+        <div class="fs-hero-content">
+            <div class="fs-hero-badge">Personalized Affirmation App</div>
+            <h1>Your mood. Your words. <span class="highlight">Your moment of clarity.</span></h1>
+            <p class="fs-hero-subtitle">Track your mood. Get affirmations written just for you. <strong>Personalized, not generic</strong> — research shows they're 2.5x more effective.</p>
+            <div class="fs-hero-buttons">
+                <a href="https://apps.apple.com/us/app/feelscape-ai-affirmations/id6755970318" class="store-button" aria-label="Download FeelScape on the App Store">
                     <span class="store-icon">🍎</span>
                     <div class="store-text">
                         <span class="store-label">Download on the</span>
                         <span class="store-name">App Store</span>
                     </div>
                 </a>
-                <a href="#" class="store-button">
+                <a href="https://play.google.com/store/apps/details?id=com.vibercoder.feelscape" class="store-button" aria-label="Get FeelScape on Google Play">
                     <span class="store-icon">▶️</span>
                     <div class="store-text">
                         <span class="store-label">Get it on</span>
@@ -40,92 +153,275 @@
                     </div>
                 </a>
             </div>
+            <div class="fs-hero-proof">
+                <span>✨ 50+ moods</span>
+                <span>🤖 AI-powered</span>
+                <span>🔒 Private & free</span>
+            </div>
         </div>
         <div class="app-hero-visual">
             <div class="phone-mockup">
                 <div class="phone-screen">
                     <div class="mockup-content">
-                        <div class="mood-circle"></div>
-                        <div class="canvas-preview">
-                            <div class="brush-stroke"></div>
-                            <div class="brush-stroke"></div>
-                            <div class="brush-stroke"></div>
+                        <div class="mockup-title">How are you feeling?</div>
+                        <div class="mood-circle">🌿</div>
+                        <div class="mockup-mood-chips">
+                            <span class="mockup-chip active">Grateful</span>
+                            <span class="mockup-chip">Hopeful</span>
+                            <span class="mockup-chip active">Calm</span>
+                            <span class="mockup-chip">Anxious</span>
+                            <span class="mockup-chip">Inspired</span>
+                            <span class="mockup-chip">Tired</span>
                         </div>
+                        <div class="mockup-affirmation">"You are allowed to feel at peace with where you are right now."</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features-section">
+    <!-- STATS BAR -->
+    <section class="fs-social-proof" aria-label="Key features at a glance">
         <div class="container">
-            <h2>How It Works</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-number">01</div>
-                    <h3>Describe Your Vision</h3>
-                    <p>Share your mood, feelings, or ideas through text or voice. The interface adapts to understand exactly what you're looking for.</p>
+            <div class="fs-stats">
+                <div class="fs-stat">
+                    <div class="fs-stat-number">50+</div>
+                    <div class="fs-stat-label">Moods to choose from</div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-number">02</div>
-                    <h3>AI Creates Your Experience</h3>
-                    <p>Our AI generates unique visual landscapes and paintings paired with immersive soundscapes—a complete sensory experience tailored to your input.</p>
+                <div class="fs-stat">
+                    <div class="fs-stat-number">8</div>
+                    <div class="fs-stat-label">Emotional categories</div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-number">03</div>
-                    <h3>Explore & Analyze</h3>
-                    <p>Dive deeper with AI-powered analysis of your creations. Understand the emotional resonance and artistic elements of each piece.</p>
+                <div class="fs-stat">
+                    <div class="fs-stat-number">15</div>
+                    <div class="fs-stat-label">Daily affirmations</div>
+                </div>
+                <div class="fs-stat">
+                    <div class="fs-stat-number">30s</div>
+                    <div class="fs-stat-label">To find your clarity</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="showcase-section">
+    <!-- HOW IT WORKS -->
+    <section class="features-section" aria-labelledby="how-it-works">
         <div class="container">
-            <div class="showcase-grid">
-                <div class="showcase-content">
-                    <h2>Not Just Art. A Creative Companion.</h2>
-                    <p>FeelScape combines generative AI art with immersive audio to create complete sensory experiences. Each creation is unique—a visual landscape paired with a matching soundscape, analyzed and explained by AI.</p>
-                    <ul class="feature-list">
-                        <li>🖼️ AI-generated paintings and landscapes</li>
-                        <li>🎵 Matching immersive soundscapes</li>
-                        <li>🧠 Deep AI analysis of your creations</li>
-                        <li>💾 Save and share your favorites</li>
-                        <li>🎨 Multiple art styles to explore</li>
+            <h2 id="how-it-works">How It Works</h2>
+            <p class="section-subtitle">Three steps. Thirty seconds. A shift in perspective.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Log Your Mood</h3>
+                    <p>Choose from 50+ moods across 8 emotional categories. Anxious, hopeful, overwhelmed, grateful — we have a mood for exactly how you feel right now.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Get Personalized Affirmations</h3>
+                    <p>Our AI generates affirmations written specifically for your mood, your patterns, and your journey. Not cookie-cutter. Truly yours.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Find Your Clarity</h3>
+                    <p>Read, reflect, and save the affirmations that resonate. Share them as beautiful cards. In just 30 seconds, shift from uncertainty to clarity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFFERENTIATOR -->
+    <section class="fs-differentiator" aria-labelledby="personalized-heading">
+        <div class="container">
+            <h2 id="personalized-heading">Personalized, Not Generic</h2>
+            <p class="section-subtitle">Because you deserve more than the same recycled quotes everyone else gets.</p>
+            <div class="fs-diff-grid">
+                <div class="fs-diff-content">
+                    <h3>Affirmations That Actually Work</h3>
+                    <p>Research shows personalized affirmations are 2.5x more effective than generic ones. FeelScape doesn't give you the same tired phrases everyone else gets — it learns your mood patterns and writes affirmations that speak directly to where you are right now.</p>
+                    <ul class="fs-diff-list">
+                        <li><span class="check">✓</span> AI-generated affirmations tailored to your exact mood</li>
+                        <li><span class="check">✓</span> 50+ moods across 8 emotional categories</li>
+                        <li><span class="check">✓</span> AI Memory System that learns your patterns over time</li>
+                        <li><span class="check">✓</span> Proactive check-ins that meet you where you are</li>
+                        <li><span class="check">✓</span> Calming dark design for mindful moments</li>
                     </ul>
                 </div>
                 <div class="showcase-visual">
                     <div class="mood-palette">
-                        <div class="mood-orb calm">Calm</div>
-                        <div class="mood-orb focus">Focus</div>
-                        <div class="mood-orb energy">Energy</div>
-                        <div class="mood-orb sleep">Sleep</div>
+                        <div class="mood-orb calm" aria-label="Calm moods">Calm</div>
+                        <div class="mood-orb focus" aria-label="Focused moods">Focus</div>
+                        <div class="mood-orb energy" aria-label="Energized moods">Energy</div>
+                        <div class="mood-orb sleep" aria-label="Restful moods">Rest</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonial-section">
+    <!-- FEATURES GRID -->
+    <section class="fs-features" aria-labelledby="features-heading">
         <div class="container">
-            <div class="testimonial-card">
-                <div class="quote-mark">"</div>
-                <p>FeelScape has become my go-to creative companion. The way it transforms my thoughts into beautiful visuals and sounds is magical. The AI analysis adds a whole new layer of understanding to each piece.</p>
-                <div class="testimonial-author">
-                    <span class="author-name">— A Future Happy User</span>
+            <h2 id="features-heading">Everything You Need for Daily Clarity</h2>
+            <p class="section-subtitle">Simple, powerful tools designed for your emotional wellness journey.</p>
+            <div class="fs-features-grid">
+                <div class="fs-feature-card">
+                    <div class="card-icon">🧠</div>
+                    <h3>AI Memory System</h3>
+                    <p>FeelScape remembers your mood patterns, values, and goals — tailoring affirmations that evolve with you over time.</p>
+                </div>
+                <div class="fs-feature-card">
+                    <div class="card-icon">✨</div>
+                    <h3>15 Daily Affirmations</h3>
+                    <p>Start each day with affirmations crafted for your current emotional state. Every single one written just for you.</p>
+                </div>
+                <div class="fs-feature-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>50+ Moods, 8 Categories</h3>
+                    <p>From anxious to grateful, from overwhelmed to inspired. We have a mood for exactly how you feel — no settling for "fine."</p>
+                </div>
+                <div class="fs-feature-card">
+                    <div class="card-icon">💬</div>
+                    <h3>Proactive Check-Ins</h3>
+                    <p>Gentle, AI-powered reminders to pause, reflect, and recharge — based on your emotional patterns and habits.</p>
+                </div>
+                <div class="fs-feature-card">
+                    <div class="card-icon">🌙</div>
+                    <h3>Beautiful Dark Mode</h3>
+                    <p>A calming teal-and-dark interface designed for mindful, distraction-free moments of self-reflection.</p>
+                </div>
+                <div class="fs-feature-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Your mood data stays yours. No selling, no sharing, no compromises. Export or delete your data anytime.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-section">
+    <!-- MOOD CATEGORIES -->
+    <section class="fs-moods" aria-labelledby="moods-heading">
         <div class="container">
-            <h2>Ready to Create Your World?</h2>
-            <p>Download FeelScape and transform your ideas into stunning visual and audio experiences.</p>
-            <div class="cta-buttons">
-                <a href="#" class="cta-button">Download for iOS</a>
-                <a href="#" class="cta-button secondary">Download for Android</a>
+            <h2 id="moods-heading">50+ Moods. Because You're Not Just "Fine."</h2>
+            <p class="section-subtitle">Choose from rich emotional categories that capture how you actually feel.</p>
+            <div class="fs-mood-grid">
+                <div class="fs-mood-chip">
+                    <span class="mood-emoji">😊</span>
+                    <span class="mood-name">Happy</span>
+                    <span class="mood-count">10 moods</span>
+                </div>
+                <div class="fs-mood-chip">
+                    <span class="mood-emoji">😢</span>
+                    <span class="mood-name">Sad</span>
+                    <span class="mood-count">6 moods</span>
+                </div>
+                <div class="fs-mood-chip">
+                    <span class="mood-emoji">⚡</span>
+                    <span class="mood-name">Energy</span>
+                    <span class="mood-count">7 moods</span>
+                </div>
+                <div class="fs-mood-chip">
+                    <span class="mood-emoji">🧘</span>
+                    <span class="mood-name">Calm</span>
+                    <span class="mood-count">7 moods</span>
+                </div>
+                <div class="fs-mood-chip">
+                    <span class="mood-emoji">😰</span>
+                    <span class="mood-name">Anxious</span>
+                    <span class="mood-count">6 moods</span>
+                </div>
+                <div class="fs-mood-chip">
+                    <span class="mood-emoji">😤</span>
+                    <span class="mood-name">Angry</span>
+                    <span class="mood-count">4 moods</span>
+                </div>
+                <div class="fs-mood-chip">
+                    <span class="mood-emoji">🫠</span>
+                    <span class="mood-name">Physical</span>
+                    <span class="mood-count">10 moods</span>
+                </div>
+                <div class="fs-mood-chip">
+                    <span class="mood-emoji">🌈</span>
+                    <span class="mood-name">All</span>
+                    <span class="mood-count">Browse all</span>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL / EARLY ACCESS -->
+    <section class="testimonial-section" aria-labelledby="community-heading">
+        <div class="container">
+            <div class="testimonial-card">
+                <div class="quote-mark">"</div>
+                <p>Self-care apps try to do everything. We do one thing exceptionally well: turn your feelings into words that actually help.</p>
+                <div class="testimonial-author">
+                    <span class="author-name">— The FeelScape Philosophy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="fs-faq" aria-labelledby="faq-heading">
+        <div class="container">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+            <div class="fs-faq-list">
+                <details class="fs-faq-item">
+                    <summary>What is FeelScape?</summary>
+                    <div class="fs-faq-answer">
+                        FeelScape is a personalized affirmation and mood tracker app. You select from 50+ moods across 8 emotional categories, and our AI instantly generates affirmations written specifically for how you feel right now — not generic quotes, but words tailored to your exact emotional state.
+                    </div>
+                </details>
+                <details class="fs-faq-item">
+                    <summary>How does FeelScape personalize affirmations?</summary>
+                    <div class="fs-faq-answer">
+                        FeelScape uses AI to analyze the specific moods you select and generates affirmations that directly address your current emotional state. Premium users get an AI Memory System that learns your patterns, values, and goals over time, making affirmations even more personal and effective.
+                    </div>
+                </details>
+                <details class="fs-faq-item">
+                    <summary>What moods can I track with FeelScape?</summary>
+                    <div class="fs-faq-answer">
+                        FeelScape offers 50+ moods organized into 8 categories: Happy, Sad, Energy, Calm, Anxious, Angry, Physical, and more. From grateful and inspired to overwhelmed and restless — there's a mood for exactly how you feel.
+                    </div>
+                </details>
+                <details class="fs-faq-item">
+                    <summary>Is FeelScape free to use?</summary>
+                    <div class="fs-faq-answer">
+                        Yes! FeelScape is free to download and use. You get daily personalized affirmations at no cost. A premium subscription unlocks additional features like the AI Memory System, 15 daily affirmations, proactive check-ins, and unlimited mood logging.
+                    </div>
+                </details>
+                <details class="fs-faq-item">
+                    <summary>How is FeelScape different from other affirmation apps?</summary>
+                    <div class="fs-faq-answer">
+                        Most affirmation apps give you the same recycled quotes everyone else gets. FeelScape generates affirmations written specifically for your mood, every time. Research shows personalized affirmations are 2.5x more effective than generic ones. Plus, our AI Memory System learns your emotional patterns over time for even deeper personalization.
+                    </div>
+                </details>
+                <details class="fs-faq-item">
+                    <summary>Is my mood data private and secure?</summary>
+                    <div class="fs-faq-answer">
+                        Absolutely. Your mood data is encrypted and never sold or shared with third parties. We don't use your personal inputs to train AI models without your explicit consent. You can export or delete your data at any time. Your privacy is non-negotiable.
+                    </div>
+                </details>
+                <details class="fs-faq-item">
+                    <summary>What is the AI Memory System?</summary>
+                    <div class="fs-faq-answer">
+                        The AI Memory System is a premium feature that learns your emotional patterns, values, goals, and coping strategies over time. It uses this understanding to generate increasingly personalized affirmations and proactive check-ins that meet you exactly where you are.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+        <div class="container">
+            <h2 id="cta-heading">Your moment of clarity is 30 seconds away.</h2>
+            <p>Download FeelScape and get personalized affirmations that actually resonate.</p>
+            <div class="cta-buttons">
+                <a href="https://apps.apple.com/us/app/feelscape-ai-affirmations/id6755970318" class="cta-button">Download for iOS</a>
+                <a href="https://play.google.com/store/apps/details?id=com.vibercoder.feelscape" class="cta-button secondary">Download for Android</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--gray);">Free to download. Your data stays yours.</p>
         </div>
     </section>
 
@@ -138,6 +434,8 @@
                     <a href="feelscape-terms.html">Terms of Service</a>
                     <span class="divider">|</span>
                     <a href="feelscape-privacy.html">Privacy Policy</a>
+                    <span class="divider">|</span>
+                    <a href="support.html">Support</a>
                 </div>
             </div>
         </div>
