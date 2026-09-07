@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/feelscape.html", "destination": "/feelscape/", "permanent": true },
+    { "source": "/feelscape-privacy.html", "destination": "/feelscape/privacy/", "permanent": true },
+    { "source": "/feelscape-terms.html", "destination": "/feelscape/terms/", "permanent": true }
+  ]
+}
