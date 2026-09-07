@@ -2,27 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>SealDocs | Privacy-First Document Vault App</title>
-    <meta name="description" content="Store, organize, and track your critical documents securely. SealDocs keeps everything encrypted on your device — passports, IDs, insurance, pet records, and more. Smart expiry reminders so you never miss a deadline.">
-    <meta name="keywords" content="document vault app, document scanner, passport tracker, expiry reminder, document organizer, privacy first app, encrypted documents, ID storage app, insurance tracker, pet records app">
+    <meta name="description" content="Store, organize, and track your critical documents securely. SealDocs keeps everything encrypted on your device — passports, IDs, insurance, pet records, and more. Smart expiry reminders. Coming soon to iOS and Android.">
     <meta name="author" content="vibe&code">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FBF9F7">
     <link rel="canonical" href="https://vibeandcode.com/sealdocs.html">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="SealDocs — Your Documents, Secured & Organized">
     <meta property="og:description" content="Privacy-first document vault. Store, organize, and track expiry dates for passports, IDs, insurance, and more. Encrypted locally on your device.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vibeandcode.com/sealdocs.html">
     <meta property="og:site_name" content="vibe&code">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="SealDocs — Your Documents, Secured & Organized">
-    <meta name="twitter:description" content="Privacy-first document vault. Encrypted locally. Smart expiry reminders. Free for iOS & Android.">
-
-    <!-- Structured Data: SoftwareApplication -->
+    <meta name="twitter:description" content="Privacy-first document vault. Store, organize, and track expiry dates for passports, IDs, insurance, and more. Encrypted locally on your device.">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -44,8 +40,6 @@
         "url": "https://vibeandcode.com/sealdocs.html"
     }
     </script>
-
-    <!-- Structured Data: FAQ -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -111,330 +105,313 @@
     }
     </script>
 
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/site.css">
 </head>
-<body class="sealdocs-page">
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">vibe<span>&</span>code</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="support.html">Support</a>
+<body>
+    <a href="#main" class="skip">Skip to content</a>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="/" class="wordmark" aria-label="vibe&amp;code home">vibe<em>&amp;</em>code</a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/sealdocs.html" aria-current="page">SealDocs</a>
+                <a href="/feelscape/">FeelScape</a>
+                <a href="/support.html">Support</a>
+            </nav>
+            <div class="nav-right">
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
+                    <span id="menu-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+                    <span id="close-icon" hidden><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg></span>
+                </button>
             </div>
         </div>
-    </nav>
+        <div class="nav-mobile" id="nav-mobile">
+            <nav aria-label="Mobile navigation">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/sealdocs.html">SealDocs</a>
+                <a href="/feelscape/">FeelScape</a>
+                <a href="/support.html">Support</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
 
-    <!-- HERO -->
-    <section class="sd-hero" aria-label="SealDocs app overview">
-        <div class="sd-hero-content">
-            <div class="sd-hero-badge">Privacy-First Document Vault</div>
-            <h1>Your documents. Your device. <span class="highlight">Always secure.</span></h1>
-            <p class="sd-hero-subtitle">Store, organize, and track expiry dates for critical documents. <strong>Encrypted locally</strong> — your data never leaves your phone unless you say so.</p>
-            <div class="sd-hero-buttons">
-                <a href="#" class="store-button" aria-label="Download SealDocs on the App Store">
-                    <span class="store-icon">&#127822;</span>
-                    <div class="store-text">
-                        <span class="store-label">Coming soon on</span>
-                        <span class="store-name">App Store</span>
-                    </div>
-                </a>
-                <a href="#" class="store-button" aria-label="Get SealDocs on Google Play">
-                    <span class="store-icon">&#9654;&#65039;</span>
-                    <div class="store-text">
-                        <span class="store-label">Coming soon on</span>
-                        <span class="store-name">Google Play</span>
-                    </div>
-                </a>
+    <section class="hero bg-blush" aria-label="SealDocs overview">
+        <div class="drift" style="top:-160px;left:-160px;width:520px;height:520px;background:color-mix(in srgb, var(--sd-pink) 22%, transparent)"></div>
+        <div class="drift" style="top:60px;right:-180px;width:520px;height:520px;background:color-mix(in srgb, var(--sd-blue) 30%, transparent);animation-delay:-8s"></div>
+
+        <div class="container hero-inner">
+            <div class="hero-copy fade-up">
+                <span class="pill glass"><span class="dot pink"></span>SealDocs · Coming soon</span>
+                <h1 class="display h1">Your documents. Your device. <span class="gradient-text-pink">Always secure.</span></h1>
+                <p class="lead">Store, organise and track expiry dates for the documents that matter. <strong>Encrypted locally</strong>, so nothing leaves your phone unless you say so.</p>
+                <div class="btn-row">
+                    <span class="store soon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><span><span class="top">Coming soon on the</span><span class="name">App Store</span></span></span>
+                    <span class="store soon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 12l2.302-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302L5.864 2.658z"/></svg><span><span class="top">Coming soon on</span><span class="name">Google Play</span></span></span>
+                </div>
+                <ul class="checks pink">
+                    <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>37+ document types</li>
+                    <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Encrypted on your device</li>
+                    <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Free to start</li>
+                </ul>
             </div>
-            <div class="sd-hero-proof">
-                <span>&#128196; 37+ doc types</span>
-                <span>&#128274; Encrypted locally</span>
-                <span>&#127381; Free to use</span>
-            </div>
-        </div>
-        <div class="app-hero-visual">
-            <div class="phone-mockup sd-phone">
-                <div class="phone-screen sd-screen">
-                    <div class="sd-mockup-content">
-                        <div class="sd-mockup-title">Your Vault</div>
-                        <div class="sd-vault-icon">&#128737;&#65039;</div>
-                        <div class="sd-mockup-docs">
-                            <span class="sd-doc-chip"><span class="sd-doc-emoji">&#128382;</span> Passport</span>
-                            <span class="sd-doc-chip active"><span class="sd-doc-emoji">&#128179;</span> Insurance</span>
-                            <span class="sd-doc-chip"><span class="sd-doc-emoji">&#128663;</span> Vehicle</span>
-                            <span class="sd-doc-chip active"><span class="sd-doc-emoji">&#128062;</span> Pet Docs</span>
-                            <span class="sd-doc-chip"><span class="sd-doc-emoji">&#128188;</span> Business</span>
-                            <span class="sd-doc-chip"><span class="sd-doc-emoji">&#127891;</span> School</span>
-                        </div>
-                        <div class="sd-mockup-status">&#9989; 3 documents expiring soon</div>
-                    </div>
+
+            <div class="hero-visual fade-up" style="animation-delay:120ms;max-width:360px">
+                <img src="/assets/sealdocs-icon.png" width="256" height="256" alt="SealDocs app icon: Sealy the seal holding a document" class="float" style="width:72%;margin:0 auto;border-radius:22%;box-shadow:var(--shadow-lift)">
+                <div class="float-card glass float bl" style="animation-delay:-3s" aria-hidden="true">
+                    <div class="meta"><i style="background:#4A90D9"></i>Passport · Personal</div>
+                    <p>Expires in 42 days. Time to renew.</p>
+                    <div class="bar"><i></i></div>
+                </div>
+                <div class="float-card glass float tr" style="animation-delay:-5s" aria-hidden="true">
+                    <div class="meta"><i style="background:#7ED321"></i>Luna · Pet vaccination</div>
+                    <p>All up to date. Sealy is napping.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- STATS BAR -->
-    <section class="sd-social-proof" aria-label="Key features at a glance">
+    <section class="section" aria-labelledby="how-heading">
         <div class="container">
-            <div class="sd-stats">
-                <div class="sd-stat">
-                    <div class="sd-stat-number">37+</div>
-                    <div class="sd-stat-label">Document types</div>
+            <div class="section-head reveal">
+                <p class="eyebrow pink">How it works</p>
+                <h2 id="how-heading" class="display h2">Three steps. Thirty seconds.</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card card-pad feature reveal">
+                    <span class="step-num">01</span>
+                    <h3 class="h3">Scan it</h3>
+                    <p>Point your camera at any document. SealDocs detects the type and extracts the key details with on-device text recognition. No cloud required.</p>
                 </div>
-                <div class="sd-stat">
-                    <div class="sd-stat-number">3</div>
-                    <div class="sd-stat-label">Profile types</div>
+                <div class="card card-pad feature reveal">
+                    <span class="step-num">02</span>
+                    <h3 class="h3">File it by person</h3>
+                    <p>Profiles for family members, pets and businesses. Every document lands in the right place, sorted by person, category and urgency.</p>
                 </div>
-                <div class="sd-stat">
-                    <div class="sd-stat-number">Smart</div>
-                    <div class="sd-stat-label">Expiry reminders</div>
-                </div>
-                <div class="sd-stat">
-                    <div class="sd-stat-number">30s</div>
-                    <div class="sd-stat-label">To get organized</div>
+                <div class="card card-pad feature reveal">
+                    <span class="step-num">03</span>
+                    <h3 class="h3">Hear about it early</h3>
+                    <p>Reminders 90, 30 and 7 days before anything expires. Passport renewal, insurance lapse, a pet's vaccination. You will know in time.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="features-section" aria-labelledby="how-it-works">
+    <section class="section bg-elevated" aria-labelledby="privacy-heading">
         <div class="container">
-            <h2 id="how-it-works">How It Works</h2>
-            <p class="section-subtitle">Three steps. Thirty seconds. Never miss a deadline again.</p>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-number">01</div>
-                    <h3>Scan & Upload</h3>
-                    <p>Point your camera at any document. SealDocs auto-detects the type and extracts key details using on-device text recognition. No cloud processing required.</p>
+            <div class="grid grid-2" style="align-items:center;gap:44px">
+                <div class="reveal">
+                    <p class="eyebrow pink">Your documents, your device</p>
+                    <h2 id="privacy-heading" class="display h2">Privacy that actually means something.</h2>
+                    <p class="lead" style="margin-top:18px">Most apps put your sensitive documents on their servers. SealDocs was built local-first from the start: passports, IDs and records are encrypted and stored on your phone, not somewhere you don't control. Cloud features are optional and always explicit.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-number">02</div>
-                    <h3>Organize by Profile</h3>
-                    <p>Create profiles for family members, pets, and businesses. Every document lands in the right place — organized by person, category, and urgency.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-number">03</div>
-                    <h3>Stay Ahead of Deadlines</h3>
-                    <p>Smart reminders alert you 90 days, 30 days, and 7 days before any document expires. Passport renewal, insurance lapse, pet vaccination — you'll always know in advance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DIFFERENTIATOR -->
-    <section class="sd-differentiator" aria-labelledby="privacy-heading">
-        <div class="container">
-            <h2 id="privacy-heading">Your Documents, Your Device</h2>
-            <p class="section-subtitle">Most apps store your sensitive documents on their servers. We don't.</p>
-            <div class="sd-diff-grid">
-                <div class="sd-diff-content">
-                    <h3>Privacy That Actually Means Something</h3>
-                    <p>SealDocs was built from the ground up with a local-first architecture. Your passports, IDs, and sensitive documents are encrypted and stored on your device — not on some server you don't control. Cloud features are optional and always explicit.</p>
-                    <ul class="sd-diff-list">
-                        <li><span class="check">&#10003;</span> Encrypted local SQLite database</li>
-                        <li><span class="check">&#10003;</span> Biometric lock (Face ID / Touch ID)</li>
-                        <li><span class="check">&#10003;</span> No cross-app tracking or fingerprinting</li>
-                        <li><span class="check">&#10003;</span> Cloud OCR is per-image opt-in only</li>
-                        <li><span class="check">&#10003;</span> Export or delete all data anytime</li>
+                <div class="card card-pad reveal">
+                    <ul class="checklist">
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Encrypted local SQLite database</span></li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Biometric lock (Face ID / Touch ID)</span></li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>No cross-app tracking or fingerprinting</span></li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Cloud OCR is per-image opt-in only</span></li>
+                        <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Export or delete all data at any time</span></li>
                     </ul>
                 </div>
-                <div class="showcase-visual">
-                    <div class="mood-palette">
-                        <div class="mood-orb sd-orb-personal" aria-label="Personal documents">Personal</div>
-                        <div class="mood-orb sd-orb-business" aria-label="Business documents">Business</div>
-                        <div class="mood-orb sd-orb-pet" aria-label="Pet documents">Pet</div>
-                        <div class="mood-orb sd-orb-vehicle" aria-label="Vehicle documents">Vehicle</div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- FEATURES GRID -->
-    <section class="sd-features" aria-labelledby="features-heading">
+    <section class="section" aria-labelledby="features-heading">
         <div class="container">
-            <h2 id="features-heading">Everything You Need to Stay Organized</h2>
-            <p class="section-subtitle">Powerful tools designed for the documents that matter most.</p>
-            <div class="sd-features-grid">
-                <div class="sd-feature-card">
-                    <div class="card-icon">&#9200;</div>
-                    <h3>Smart Expiry Tracking</h3>
-                    <p>Automatic reminders at 90, 30, and 7 days before expiry. Color-coded urgency so you always know what needs attention first.</p>
+            <div class="section-head reveal">
+                <p class="eyebrow pink">Features</p>
+                <h2 id="features-heading" class="display h2">Everything you need to stay organised.</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card card-pad feature reveal">
+                    <span class="icon pink"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg></span>
+                    <h3 class="h3">Smart expiry tracking</h3>
+                    <p>Automatic reminders at 90, 30 and 7 days before expiry. Colour-coded urgency, so you always know what needs attention first.</p>
                 </div>
-                <div class="sd-feature-card">
-                    <div class="card-icon">&#129565;</div>
-                    <h3>AI Assistant (Sealy)</h3>
-                    <p>Ask Sealy "Am I ready for Japan?" and get source-backed answers based on your actual documents. Your personal document concierge.</p>
+                <div class="card card-pad feature reveal">
+                    <span class="icon blue"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM5 18l.7 1.8L7.5 20.5l-1.8.7L5 23l-.7-1.8-1.8-.7 1.8-.7L5 18z"/></svg></span>
+                    <h3 class="h3">Sealy, the assistant</h3>
+                    <p>Ask “Am I ready for Japan?” and get source-backed answers based on your actual documents. A concierge for your paperwork.</p>
                 </div>
-                <div class="sd-feature-card">
-                    <div class="card-icon">&#128101;</div>
-                    <h3>Multi-Profile Support</h3>
-                    <p>Organize documents for your whole household — family members, pets, and businesses. Each profile gets its own organized vault.</p>
+                <div class="card card-pad feature reveal">
+                    <span class="icon lav"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path stroke-linecap="round" d="M2.5 20c.6-3.6 3.3-5.5 6.5-5.5s5.9 1.9 6.5 5.5M16 4.5a3.5 3.5 0 010 7M21.5 20c-.4-2.6-1.9-4.3-4-5"/></svg></span>
+                    <h3 class="h3">Profiles for everyone</h3>
+                    <p>Organise documents for the whole household. Family members, pets and businesses each get their own vault.</p>
                 </div>
-                <div class="sd-feature-card">
-                    <div class="card-icon">&#128247;</div>
-                    <h3>Document Scanning</h3>
-                    <p>Point, scan, done. On-device text recognition auto-detects document type and extracts key details. No cloud processing needed.</p>
+                <div class="card card-pad feature reveal">
+                    <span class="icon gold"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+                    <h3 class="h3">Scan and go</h3>
+                    <p>Point, scan, done. On-device text recognition detects the document type and pulls out the key details. No cloud processing needed.</p>
                 </div>
-                <div class="sd-feature-card">
-                    <div class="card-icon">&#128274;</div>
-                    <h3>Biometric Security</h3>
-                    <p>Face ID and Touch ID protection. Your vault stays locked until you say otherwise. No one else gets in.</p>
+                <div class="card card-pad feature reveal">
+                    <span class="icon pink"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path stroke-linecap="round" d="M8 11V8a4 4 0 118 0v3"/></svg></span>
+                    <h3 class="h3">Biometric lock</h3>
+                    <p>Face ID and Touch ID protection. Your vault stays locked until you say otherwise.</p>
                 </div>
-                <div class="sd-feature-card">
-                    <div class="card-icon">&#128230;</div>
-                    <h3>Data Export</h3>
-                    <p>Export your vault as JSON or PDF anytime. Import from backups. Your data is always yours to take wherever you go.</p>
+                <div class="card card-pad feature reveal">
+                    <span class="icon blue"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0-12l-4 4m4-4l4 4M4 15v3a2 2 0 002 2h12a2 2 0 002-2v-3"/></svg></span>
+                    <h3 class="h3">Your data, portable</h3>
+                    <p>Export the vault as JSON or PDF at any time. Import from backups. It is always yours to take with you.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- DOCUMENT CATEGORIES -->
-    <section class="sd-categories" aria-labelledby="categories-heading">
+    <section class="section bg-elevated" aria-labelledby="categories-heading">
         <div class="container">
-            <h2 id="categories-heading">37+ Document Types. Because Life Is Complicated.</h2>
-            <p class="section-subtitle">From passports to pet vaccinations — there's a place for every document that matters.</p>
-            <div class="sd-category-grid">
-                <div class="sd-category-chip">
-                    <span class="sd-cat-emoji">&#128100;</span>
-                    <span class="sd-cat-name">Personal</span>
-                    <span class="sd-cat-count">11 types</span>
-                </div>
-                <div class="sd-category-chip">
-                    <span class="sd-cat-emoji">&#128663;</span>
-                    <span class="sd-cat-name">Vehicle</span>
-                    <span class="sd-cat-count">5 types</span>
-                </div>
-                <div class="sd-category-chip">
-                    <span class="sd-cat-emoji">&#127968;</span>
-                    <span class="sd-cat-name">Household</span>
-                    <span class="sd-cat-count">5 types</span>
-                </div>
-                <div class="sd-category-chip">
-                    <span class="sd-cat-emoji">&#128179;</span>
-                    <span class="sd-cat-name">Financial</span>
-                    <span class="sd-cat-count">3 types</span>
-                </div>
-                <div class="sd-category-chip">
-                    <span class="sd-cat-emoji">&#128106;</span>
-                    <span class="sd-cat-name">Family</span>
-                    <span class="sd-cat-count">1 type</span>
-                </div>
-                <div class="sd-category-chip">
-                    <span class="sd-cat-emoji">&#128062;</span>
-                    <span class="sd-cat-name">Pet</span>
-                    <span class="sd-cat-count">5 types</span>
-                </div>
-                <div class="sd-category-chip">
-                    <span class="sd-cat-emoji">&#128188;</span>
-                    <span class="sd-cat-name">Business</span>
-                    <span class="sd-cat-count">5 types</span>
-                </div>
-                <div class="sd-category-chip">
-                    <span class="sd-cat-emoji">&#128279;</span>
-                    <span class="sd-cat-name">Subscriptions</span>
-                    <span class="sd-cat-count">5 types</span>
-                </div>
+            <div class="section-head reveal">
+                <p class="eyebrow pink">37+ document types</p>
+                <h2 id="categories-heading" class="display h2">Because life is complicated.</h2>
+                <p class="lead" style="margin-top:14px">From passports to pet vaccinations, there is a place for every document that matters.</p>
+            </div>
+            <div class="chip-grid">
+                <div class="card chip reveal"><span class="sw" style="background:#4A90D9"></span><span class="name">Personal</span><span class="count">11 types</span></div>
+                <div class="card chip reveal"><span class="sw" style="background:#E17055"></span><span class="name">Vehicle</span><span class="count">5 types</span></div>
+                <div class="card chip reveal"><span class="sw" style="background:#FDCB6E"></span><span class="name">Household</span><span class="count">5 types</span></div>
+                <div class="card chip reveal"><span class="sw" style="background:#0984E3"></span><span class="name">Financial</span><span class="count">3 types</span></div>
+                <div class="card chip reveal"><span class="sw" style="background:#E84393"></span><span class="name">Family</span><span class="count">1 type</span></div>
+                <div class="card chip reveal"><span class="sw" style="background:#7ED321"></span><span class="name">Pet</span><span class="count">5 types</span></div>
+                <div class="card chip reveal"><span class="sw" style="background:#2D3436"></span><span class="name">Business</span><span class="count">5 types</span></div>
+                <div class="card chip reveal"><span class="sw" style="background:#6C5CE7"></span><span class="name">Subscriptions</span><span class="count">5 types</span></div>
             </div>
         </div>
     </section>
 
-    <!-- TESTIMONIAL / PHILOSOPHY -->
-    <section class="testimonial-section" aria-labelledby="philosophy-heading">
+    <section class="section" aria-label="Why SealDocs exists">
+        <div class="container container-narrow" style="text-align:center">
+            <img src="/assets/sealy-happy.png" width="120" height="120" alt="" class="reveal" style="margin:0 auto 20px;width:120px" loading="lazy">
+            <p class="quote reveal">“Life runs on documents. People don't fail to track them because they don't care. They fail because information is fragmented, deadlines are invisible, and retrieval happens under stress. SealDocs exists to fix that.”</p>
+            <p class="quote-by reveal">Why SealDocs was made</p>
+        </div>
+    </section>
+
+    <section id="faq" class="section section-tight bg-elevated" aria-labelledby="faq-heading">
+        <div class="container container-narrow">
+            <div class="section-head reveal">
+                <p class="eyebrow pink">FAQ</p>
+                <h2 id="faq-heading" class="display h2">Frequently asked questions</h2>
+            </div>
+            <div class="card faq reveal">
+                <details open>
+                    <summary><span>What is SealDocs?</span><span class="plus"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary>
+                    <div class="answer">SealDocs is a privacy-first document vault app that helps you securely store, organize, and track expiry dates for critical documents like passports, IDs, insurance cards, pet records, and business licenses. Everything is encrypted locally on your device — your documents never leave your phone unless you explicitly choose to use cloud features.</div>
+                </details>
+                <details>
+                    <summary><span>Is my data really private?</span><span class="plus"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary>
+                    <div class="answer">Yes. All documents are stored in an encrypted SQLite database on your device. Nothing leaves your phone unless you explicitly opt in to cloud features like backup or AI assistant. We don't sell or share your data with third parties, and there's no cross-app tracking or fingerprinting. Period.</div>
+                </details>
+                <details>
+                    <summary><span>What types of documents can I store?</span><span class="plus"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary>
+                    <div class="answer">SealDocs supports 37+ document types across 8 categories: Personal (passports, IDs, visas, health insurance), Vehicle (car insurance, registration, inspection), Household (rental contracts, utilities), Financial (credit cards, loans), Family (school enrollment), Pet (vaccinations, microchip, pet passport), Business (licenses, tax registration), and Subscriptions (memberships, domains, SaaS).</div>
+                </details>
+                <details>
+                    <summary><span>Is SealDocs free to use?</span><span class="plus"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary>
+                    <div class="answer">Yes! SealDocs is free to download and use with 1 profile and up to 5 documents. A premium subscription unlocks unlimited documents, unlimited profiles (family, pets, businesses), the AI assistant Sealy, cloud backup, data export, and more.</div>
+                </details>
+                <details>
+                    <summary><span>Who is Sealy?</span><span class="plus"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary>
+                    <div class="answer">Sealy is SealDocs' friendly AI assistant — a cute seal character that acts as your personal document concierge. Ask Sealy questions like "Am I ready for Japan?" or "When does Luna's vaccination expire?" and get source-backed answers based on your actual documents. Sealy also sends smart reminders and celebrates when you're all caught up.</div>
+                </details>
+                <details>
+                    <summary><span>Does SealDocs work offline?</span><span class="plus"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary>
+                    <div class="answer">Yes. Since all documents are stored locally on your device in an encrypted database, you can access your entire vault without an internet connection. Cloud features like backup and the AI assistant require connectivity, but your core vault is always available — even on a plane or in a remote area.</div>
+                </details>
+                <details>
+                    <summary><span>Can I export or delete my data?</span><span class="plus"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg></span></summary>
+                    <div class="answer">Absolutely. Premium users can export their entire vault as JSON or PDF at any time. You can also delete all your data from the settings with a single action. Your data is always yours — we believe in giving you full control, no questions asked.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="cta-heading">
         <div class="container">
-            <div class="testimonial-card">
-                <div class="quote-mark">"</div>
-                <p>Life runs on documents. People don't fail to track them because they don't care — they fail because information is fragmented, deadlines are invisible, and retrieval happens under stress. We built SealDocs to fix that.</p>
-                <div class="testimonial-author">
-                    <span class="author-name">— The SealDocs Philosophy</span>
+            <div class="cta-card bg-dawn reveal">
+                <div class="drift" style="top:-100px;right:-100px;width:320px;height:320px;background:color-mix(in srgb, var(--sd-pink) 24%, transparent)"></div>
+                <div class="drift" style="bottom:-100px;left:-60px;width:280px;height:280px;background:color-mix(in srgb, var(--sd-blue) 30%, transparent);animation-delay:-9s"></div>
+                <div class="inner">
+                    <h2 id="cta-heading" class="display h2">Never miss a deadline again.</h2>
+                    <p class="lead">SealDocs is nearly ready for iOS and Android. Want to know the day it ships? Send a note and you will be the first to hear.</p>
+                    <div class="btn-row center">
+                        <a href="mailto:vibeandcode@gmail.com?subject=SealDocs%20launch" class="btn btn-pink">Tell me when it launches</a>
+                    </div>
+                    <p class="note">Free to download. Your documents stay on your device.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- FAQ -->
-    <section class="sd-faq" aria-labelledby="faq-heading">
-        <div class="container">
-            <h2 id="faq-heading">Frequently Asked Questions</h2>
-            <div class="sd-faq-list">
-                <details class="sd-faq-item">
-                    <summary>What is SealDocs?</summary>
-                    <div class="sd-faq-answer">
-                        SealDocs is a privacy-first document vault app that helps you securely store, organize, and track expiry dates for critical documents like passports, IDs, insurance cards, pet records, and business licenses. Everything is encrypted locally on your device — your documents never leave your phone unless you explicitly choose to use cloud features.
-                    </div>
-                </details>
-                <details class="sd-faq-item">
-                    <summary>Is my data really private?</summary>
-                    <div class="sd-faq-answer">
-                        Yes. All documents are stored in an encrypted SQLite database on your device. Nothing leaves your phone unless you explicitly opt in to cloud features like backup or AI assistant. We don't sell or share your data with third parties, and there's no cross-app tracking or fingerprinting. Period.
-                    </div>
-                </details>
-                <details class="sd-faq-item">
-                    <summary>What types of documents can I store?</summary>
-                    <div class="sd-faq-answer">
-                        SealDocs supports 37+ document types across 8 categories: Personal (passports, IDs, visas, health insurance), Vehicle (car insurance, registration, inspection), Household (rental contracts, utilities), Financial (credit cards, loans), Family (school enrollment), Pet (vaccinations, microchip, pet passport), Business (licenses, tax registration), and Subscriptions (memberships, domains, SaaS).
-                    </div>
-                </details>
-                <details class="sd-faq-item">
-                    <summary>Is SealDocs free to use?</summary>
-                    <div class="sd-faq-answer">
-                        Yes! SealDocs is free to download and use with 1 profile and up to 5 documents. A premium subscription unlocks unlimited documents, unlimited profiles (family, pets, businesses), the AI assistant Sealy, cloud backup, data export, and more.
-                    </div>
-                </details>
-                <details class="sd-faq-item">
-                    <summary>Who is Sealy?</summary>
-                    <div class="sd-faq-answer">
-                        Sealy is SealDocs' friendly AI assistant — a cute seal character that acts as your personal document concierge. Ask Sealy questions like "Am I ready for Japan?" or "When does Luna's vaccination expire?" and get source-backed answers based on your actual documents. Sealy also sends smart reminders and celebrates when you're all caught up.
-                    </div>
-                </details>
-                <details class="sd-faq-item">
-                    <summary>Does SealDocs work offline?</summary>
-                    <div class="sd-faq-answer">
-                        Yes. Since all documents are stored locally on your device in an encrypted database, you can access your entire vault without an internet connection. Cloud features like backup and the AI assistant require connectivity, but your core vault is always available — even on a plane or in a remote area.
-                    </div>
-                </details>
-                <details class="sd-faq-item">
-                    <summary>Can I export or delete my data?</summary>
-                    <div class="sd-faq-answer">
-                        Absolutely. Premium users can export their entire vault as JSON or PDF at any time. You can also delete all your data from the settings with a single action. Your data is always yours — we believe in giving you full control, no questions asked.
-                    </div>
-                </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- BOTTOM CTA -->
-    <section class="cta-section" aria-labelledby="cta-heading">
-        <div class="container">
-            <h2 id="cta-heading">Never miss a deadline again.</h2>
-            <p>Download SealDocs and take control of your documents — securely, privately, effortlessly.</p>
-            <div class="cta-buttons">
-                <a href="#" class="cta-button">Coming Soon for iOS</a>
-                <a href="#" class="cta-button secondary">Coming Soon for Android</a>
-            </div>
-            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--gray);">Free to download. Your documents stay on your device.</p>
-        </div>
-    </section>
-
+    </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <a href="index.html" class="logo">vibe<span>&</span>code</a>
-                <p>SealDocs is a vibe&code creation.</p>
-                <div class="legal-links">
-                    <a href="sealdocs-terms.html">Terms of Service</a>
-                    <span class="divider">|</span>
-                    <a href="sealdocs-privacy.html">Privacy Policy</a>
-                    <span class="divider">|</span>
-                    <a href="support.html">Support</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="wordmark" aria-label="vibe&amp;code home">vibe<em>&amp;</em>code</a>
+                    <p>Small, careful apps for iPhone and Android, made by one person who reads every email.</p>
                 </div>
+                <div>
+                    <h4>Apps</h4>
+                    <ul>
+                        <li><a href="/feelscape/">FeelScape</a></li>
+                        <li><a href="/sealdocs.html">SealDocs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/support.html">Support</a></li>
+                        <li><a href="mailto:vibeandcode@gmail.com">vibeandcode@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/feelscape/privacy/">FeelScape privacy</a></li>
+                        <li><a href="/feelscape/terms/">FeelScape terms</a></li>
+                        <li><a href="/sealdocs-privacy.html">SealDocs privacy</a></li>
+                        <li><a href="/sealdocs-terms.html">SealDocs terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 vibe&amp;code. SealDocs is a vibe&amp;code creation.</p>
+                <p><a href="/support.html">Support</a> · <a href="mailto:vibeandcode@gmail.com">vibeandcode@gmail.com</a></p>
             </div>
         </div>
     </footer>
+    <script>
+    (() => {
+        document.documentElement.classList.add('js');
+        // Mobile menu
+        const btn = document.getElementById('nav-toggle'), menu = document.getElementById('nav-mobile');
+        const mi = document.getElementById('menu-icon'), ci = document.getElementById('close-icon');
+        btn?.addEventListener('click', () => {
+            const open = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(open));
+            mi.hidden = open; ci.hidden = !open;
+        });
+        // Reveal on scroll. Everything is visible without JS, and as a safety
+        // net everything is revealed after 1.5s regardless, so landing on an
+        // anchor like /#about never leaves the sections above it blank.
+        const els = document.querySelectorAll('.reveal');
+        const showAll = () => els.forEach((el) => el.classList.add('in'));
+        if (els.length && 'IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+            }, { rootMargin: '0px 0px -6% 0px', threshold: 0.02 });
+            els.forEach((el) => io.observe(el));
+            setTimeout(showAll, 1500);
+        } else {
+            showAll();
+        }
+    })();
+    </script>
 </body>
 </html>

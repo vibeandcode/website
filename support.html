@@ -2,123 +2,206 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support | Vibe & Code</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Support | vibe&code</title>
+    <meta name="description" content="Get help with FeelScape or SealDocs, report a bug, or send an idea. Email vibeandcode@gmail.com; replies usually within a day or two.">
+    <meta name="author" content="vibe&code">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FBF9F7">
+    <link rel="canonical" href="https://vibeandcode.com/support.html">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <meta property="og:title" content="Support | vibe&code">
+    <meta property="og:description" content="Get help with FeelScape or SealDocs, report a bug, or send an idea. Email vibeandcode@gmail.com; replies usually within a day or two.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vibeandcode.com/support.html">
+    <meta property="og:site_name" content="vibe&code">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Support | vibe&code">
+    <meta name="twitter:description" content="Get help with FeelScape or SealDocs, report a bug, or send an idea. Email vibeandcode@gmail.com; replies usually within a day or two.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/site.css">
 </head>
-<body class="support-page">
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">vibe<span>&</span>code</a>
-            <div class="nav-links">
-                <a href="index.html#about">About</a>
-                <a href="index.html#apps">Apps</a>
-                <a href="index.html#philosophy">Philosophy</a>
+<body>
+    <a href="#main" class="skip">Skip to content</a>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="/" class="wordmark" aria-label="vibe&amp;code home">vibe<em>&amp;</em>code</a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/sealdocs.html">SealDocs</a>
+                <a href="/feelscape/">FeelScape</a>
+                <a href="/support.html" aria-current="page">Support</a>
+            </nav>
+            <div class="nav-right">
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
+                    <span id="menu-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+                    <span id="close-icon" hidden><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg></span>
+                </button>
             </div>
         </div>
-    </nav>
+        <div class="nav-mobile" id="nav-mobile">
+            <nav aria-label="Mobile navigation">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/sealdocs.html">SealDocs</a>
+                <a href="/feelscape/">FeelScape</a>
+                <a href="/support.html">Support</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
 
-    <section class="support-hero">
-        <div class="container">
-            <div class="support-content">
-                <div class="support-icon">💬</div>
-                <h1>Get in Touch</h1>
-                <p class="support-subtitle">Have questions, feedback, or need help with one of our apps? We'd love to hear from you.</p>
+    <section class="hero bg-sky" aria-label="Support">
+        <div class="drift" style="top:-160px;right:-160px;width:480px;height:480px;background:color-mix(in srgb, var(--peach) 60%, transparent)"></div>
+        <div class="container" style="position:relative;padding:56px 20px 48px">
+            <div class="hero-copy fade-up" style="max-width:720px">
+                <p class="eyebrow">Support</p>
+                <h1 class="display h1" style="margin-top:8px">How can I help?</h1>
+                <p class="lead">Questions, feedback or a bug in FeelScape or SealDocs: email <a href="mailto:vibeandcode@gmail.com" class="text-link">vibeandcode@gmail.com</a> or use the form below, which opens a pre-filled message in your email app. Replies usually take a day or two.</p>
             </div>
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="section" aria-label="Contact">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h2>Contact Us</h2>
-                    <p>Whether you're experiencing an issue, have a feature suggestion, or just want to say hello, feel free to reach out.</p>
-
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="method-icon">✉️</div>
-                            <div class="method-details">
-                                <h3>Email</h3>
-                                <a href="mailto:vibeandcode@gmail.com">vibeandcode@gmail.com</a>
-                            </div>
+            <div class="grid grid-2" style="gap:36px;align-items:start">
+                <div style="display:flex;flex-direction:column;gap:20px">
+                    <div class="card card-pad reveal">
+                        <div class="contact-line">
+                            <span class="icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M4 6h16a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1z"/></svg></span>
+                            <div><b>Email</b><a href="mailto:vibeandcode@gmail.com" class="text-link" style="font-size:14px">vibeandcode@gmail.com</a></div>
                         </div>
-                        <div class="contact-method">
-                            <div class="method-icon">⏱️</div>
-                            <div class="method-details">
-                                <h3>Response Time</h3>
-                                <p>We typically respond within 24-48 hours</p>
-                            </div>
+                        <div class="contact-line" style="margin-top:18px">
+                            <span class="icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg></span>
+                            <div><b>Response time</b><span>Usually within 24 to 48 hours</span></div>
                         </div>
+                    </div>
+                    <div class="card card-pad reveal">
+                        <div class="app-head">
+                            <img src="/feelscape/images/logo/feelscape-icon.png" alt="" width="48" height="48" class="app-icon" style="width:48px;height:48px;border-radius:14px">
+                            <div><h2 class="h3">FeelScape</h2><p class="sub">Subscriptions, restoring purchases, data export</p></div>
+                        </div>
+                        <p class="muted small" style="margin-top:14px">The FeelScape support page walks through the common ones: cancelling through Apple or Google, restoring on a new phone, and exporting or deleting your data.</p>
+                        <a href="/feelscape/support/" class="text-link small" style="display:inline-block;margin-top:12px">FeelScape support →</a>
+                    </div>
+                    <div class="card card-pad reveal">
+                        <div class="app-head">
+                            <img src="/assets/sealdocs-icon.png" alt="" width="48" height="48" class="app-icon" style="width:48px;height:48px;border-radius:14px">
+                            <div><h2 class="h3">SealDocs</h2><p class="sub">Coming soon</p></div>
+                        </div>
+                        <p class="muted small" style="margin-top:14px">SealDocs isn't in the stores yet. Questions about how it will handle your documents are answered in the FAQ; anything else, just write.</p>
+                        <a href="/sealdocs.html#faq" class="text-link pink small" style="display:inline-block;margin-top:12px">SealDocs FAQ →</a>
                     </div>
                 </div>
 
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="your@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a topic</option>
-                                <option value="FeelScape Support">FeelScape Support</option>
-                                <option value="SealDocs Support">SealDocs Support</option>
-                                <option value="Bug Report">Bug Report</option>
-                                <option value="Feature Request">Feature Request</option>
-                                <option value="General Inquiry">General Inquiry</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
-                        </div>
-                        <button type="submit" class="cta-button submit-btn">Send Message</button>
-                    </form>
-                </div>
+                <form class="card card-pad form reveal" id="contact-form" data-email="vibeandcode@gmail.com">
+                    <h2 class="display" style="font-size:1.6rem;margin-bottom:18px">Send a message</h2>
+                    <div class="row">
+                        <label class="field">Name<input type="text" name="name" required autocomplete="name"></label>
+                        <label class="field">Email<input type="email" name="email" required autocomplete="email"></label>
+                    </div>
+                    <label class="field">Topic
+                        <select name="subject" required>
+                            <option value="">Choose one</option>
+                            <option>FeelScape support</option>
+                            <option>SealDocs question</option>
+                            <option>Bug report</option>
+                            <option>Feature idea</option>
+                            <option>Something else</option>
+                        </select>
+                    </label>
+                    <label class="field">Message<textarea name="message" rows="6" required></textarea></label>
+                    <button type="submit" class="btn btn-primary">Open in my email app</button>
+                    <p class="status" role="status" aria-live="polite"></p>
+                </form>
             </div>
         </div>
     </section>
-
+    </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <a href="index.html" class="logo">vibe<span>&</span>code</a>
-                <p>Built with flow, shipped with love.</p>
-                <div class="legal-links">
-                    <a href="/feelscape/privacy/">FeelScape Privacy</a>
-                    <span class="divider">•</span>
-                    <a href="sealdocs-privacy.html">SealDocs Privacy</a>
-                    <span class="divider">•</span>
-                    <a href="support.html">Support</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="wordmark" aria-label="vibe&amp;code home">vibe<em>&amp;</em>code</a>
+                    <p>Small, careful apps for iPhone and Android, made by one person who reads every email.</p>
                 </div>
+                <div>
+                    <h4>Apps</h4>
+                    <ul>
+                        <li><a href="/feelscape/">FeelScape</a></li>
+                        <li><a href="/sealdocs.html">SealDocs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/support.html">Support</a></li>
+                        <li><a href="mailto:vibeandcode@gmail.com">vibeandcode@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/feelscape/privacy/">FeelScape privacy</a></li>
+                        <li><a href="/feelscape/terms/">FeelScape terms</a></li>
+                        <li><a href="/sealdocs-privacy.html">SealDocs privacy</a></li>
+                        <li><a href="/sealdocs-terms.html">SealDocs terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 vibe&amp;code. vibe&amp;code is an independent studio. FeelScape and SealDocs are its apps.</p>
+                <p><a href="/support.html">Support</a> · <a href="mailto:vibeandcode@gmail.com">vibeandcode@gmail.com</a></p>
             </div>
         </div>
     </footer>
-
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-
-            const mailtoBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
-            const mailtoLink = `mailto:vibeandcode@gmail.com?subject=${encodeURIComponent(subject)}&body=${mailtoBody}`;
-
-            window.location.href = mailtoLink;
+    (() => {
+        document.documentElement.classList.add('js');
+        // Mobile menu
+        const btn = document.getElementById('nav-toggle'), menu = document.getElementById('nav-mobile');
+        const mi = document.getElementById('menu-icon'), ci = document.getElementById('close-icon');
+        btn?.addEventListener('click', () => {
+            const open = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(open));
+            mi.hidden = open; ci.hidden = !open;
         });
+        // Reveal on scroll. Everything is visible without JS, and as a safety
+        // net everything is revealed after 1.5s regardless, so landing on an
+        // anchor like /#about never leaves the sections above it blank.
+        const els = document.querySelectorAll('.reveal');
+        const showAll = () => els.forEach((el) => el.classList.add('in'));
+        if (els.length && 'IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+            }, { rootMargin: '0px 0px -6% 0px', threshold: 0.02 });
+            els.forEach((el) => io.observe(el));
+            setTimeout(showAll, 1500);
+        } else {
+            showAll();
+        }
+    })();
+    </script>
+    <script>
+    (() => {
+        const form = document.getElementById('contact-form');
+        const status = form.querySelector('.status');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const f = Object.fromEntries(new FormData(form));
+            const to = form.dataset.email;
+            const subject = `[vibe&code] ${f.subject || 'Support'} \u2014 ${f.name}`;
+            const body = `${f.message}\n\n\u2014\n${f.name}\nReply to: ${f.email}`;
+            status.textContent = 'Opening your email app\u2026 if nothing happens, email ' + to + ' directly.';
+            window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    })();
     </script>
 </body>
 </html>

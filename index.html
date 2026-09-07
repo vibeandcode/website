@@ -2,157 +2,279 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vibe&code | Wellness Apps Built Through Creative Flow</title>
-    <meta name="description" content="vibe&code builds beautiful, intuitive apps through creative flow. Home of FeelScape (AI-powered mood tracker) and SealDocs (privacy-first document vault).">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>vibe&code | Calm, private apps for iPhone and Android</title>
+    <meta name="description" content="vibe&code is a one-person studio making small, careful apps. FeelScape writes affirmations for how you feel. SealDocs keeps your documents safe on your device.">
     <meta name="author" content="vibe&code">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FBF9F7">
     <link rel="canonical" href="https://vibeandcode.com/">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="vibe&code | Wellness Apps Built Through Creative Flow">
-    <meta property="og:description" content="Beautiful, intuitive apps built through creative flow. Home of FeelScape, the personalized affirmation app.">
+    <meta property="og:title" content="vibe&code | Calm, private apps for iPhone and Android">
+    <meta property="og:description" content="vibe&code is a one-person studio making small, careful apps. FeelScape writes affirmations for how you feel. SealDocs keeps your documents safe on your device.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vibeandcode.com/">
     <meta property="og:site_name" content="vibe&code">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="vibe&code | Wellness Apps Built Through Creative Flow">
-    <meta name="twitter:description" content="Beautiful, intuitive apps built through creative flow. Home of FeelScape, the personalized affirmation app.">
-
-    <link rel="stylesheet" href="styles.css">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="vibe&code | Calm, private apps for iPhone and Android">
+    <meta name="twitter:description" content="vibe&code is a one-person studio making small, careful apps. FeelScape writes affirmations for how you feel. SealDocs keeps your documents safe on your device.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"vibe&code","url":"https://vibeandcode.com","email":"vibeandcode@gmail.com","description":"An independent studio making calm, private apps for iPhone and Android."}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/site.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">vibe<span>&</span>code</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#apps">Apps</a>
-                <a href="#philosophy">Philosophy</a>
+    <a href="#main" class="skip">Skip to content</a>
+    <header class="nav">
+        <div class="container nav-inner">
+            <a href="/" class="wordmark" aria-label="vibe&amp;code home">vibe<em>&amp;</em>code</a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/sealdocs.html">SealDocs</a>
+                <a href="/feelscape/">FeelScape</a>
+                <a href="/support.html">Support</a>
+            </nav>
+            <div class="nav-right">
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
+                    <span id="menu-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+                    <span id="close-icon" hidden><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg></span>
+                </button>
             </div>
         </div>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">Welcome to the flow state</div>
-            <h1>Where <span class="gradient-text">Vibes</span> Meet <span class="gradient-text">Code</span></h1>
-            <p class="hero-subtitle">Building beautiful, intuitive apps through creative flow. No rigid processes, no burnout—just pure creation guided by intuition and powered by modern AI.</p>
-            <a href="#apps" class="cta-button">Explore My Apps</a>
+        <div class="nav-mobile" id="nav-mobile">
+            <nav aria-label="Mobile navigation">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/sealdocs.html">SealDocs</a>
+                <a href="/feelscape/">FeelScape</a>
+                <a href="/support.html">Support</a>
+            </nav>
         </div>
-        <div class="hero-visual">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
+    </header>
+    <main id="main">
+
+    <section class="hero bg-sky" aria-label="Introduction">
+        <div class="drift" style="top:-160px;left:-160px;width:540px;height:540px;background:color-mix(in srgb, var(--lavender) 30%, transparent)"></div>
+        <div class="drift" style="top:40px;right:-180px;width:520px;height:520px;background:color-mix(in srgb, var(--peach) 70%, transparent);animation-delay:-8s"></div>
+        <div class="drift" style="bottom:-200px;left:33%;width:600px;height:600px;background:color-mix(in srgb, var(--mint) 60%, transparent);animation-delay:-14s"></div>
+
+        <div class="container hero-inner">
+            <div class="hero-copy fade-up">
+                <span class="pill glass"><span class="dot"></span>An independent app studio</span>
+                <h1 class="display h1">Small apps, <span class="gradient-text">made with care.</span></h1>
+                <p class="lead">vibe&amp;code is a one-person studio building calm, private apps for iPhone and Android. No growth hacks, no dark patterns. Just software that does one thing well and then gets out of your way.</p>
+                <div class="btn-row">
+                    <a href="#apps" class="btn btn-primary">See the apps</a>
+                    <a href="/support.html" class="btn btn-ghost">Say hello</a>
+                </div>
+                <ul class="checks">
+                    <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Free to start</li>
+                    <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Private by default</li>
+                    <li><svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Made by a person you can email</li>
+                </ul>
+            </div>
+
+            <div class="hero-visual fade-up" style="animation-delay:120ms">
+                <div class="phone float">
+                    <img src="/feelscape/images/screenshots/screen-4-640.webp"
+                         srcset="/feelscape/images/screenshots/screen-4-640.webp 640w, /feelscape/images/screenshots/screen-4-1080.webp 1080w"
+                         sizes="(min-width: 1000px) 420px, 80vw" width="640" height="1270"
+                         alt="FeelScape showing an affirmation written for the user's mood" fetchpriority="high" decoding="async">
+                </div>
+                <div class="float-card glass float tl" style="animation-delay:-2.5s" aria-hidden="true">
+                    <div class="meta"><img src="/feelscape/images/logo/feelscape-icon-96.png" alt="" width="20" height="20">FeelScape · Anxious · 9:12 am</div>
+                    <p>Right now, in this breath, I am safe.</p>
+                </div>
+                <div class="float-card glass float br" style="animation-delay:-4.5s" aria-hidden="true">
+                    <div class="meta"><img src="/assets/sealdocs-icon-96.png" alt="" width="20" height="20">SealDocs · Passport</div>
+                    <p>Expires in 42 days. Renewal usually takes three weeks.</p>
+                    <div class="bar"><i></i></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about-section">
+    <section id="apps" class="section" aria-labelledby="apps-heading">
         <div class="container">
-            <h2>What is Vibe Coding?</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="card-icon">✨</div>
-                    <h3>Flow State Development</h3>
-                    <p>Coding when inspiration strikes. Letting ideas marinate. Building features that feel right, not just ones that check boxes.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">🤖</div>
-                    <h3>AI-Augmented Creation</h3>
-                    <p>Leveraging cutting-edge AI to handle the mundane, so I can focus on the creative. It's like having a brilliant coding partner available 24/7.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">🎨</div>
-                    <h3>Design-First Thinking</h3>
-                    <p>Every app starts with how it should feel. The code follows the vision, not the other way around. User experience is everything.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">🚀</div>
-                    <h3>Ship What Matters</h3>
-                    <p>No feature creep. No over-engineering. Just thoughtful solutions to real problems, delivered with polish and care.</p>
-                </div>
+            <div class="section-head reveal">
+                <p class="eyebrow">The apps</p>
+                <h2 id="apps-heading" class="display h2">Two so far. Both built the same way.</h2>
+                <p class="lead" style="margin-top:14px">Quiet on the outside, careful on the inside. Each one started as something I wanted for myself.</p>
             </div>
-        </div>
-    </section>
 
-    <section id="apps" class="apps-section">
-        <div class="container">
-            <h2>The Apps</h2>
-            <p class="section-subtitle">Projects born from creative sessions and late-night inspiration</p>
-
-            <div class="apps-grid">
-                <a href="/feelscape/" class="app-card feelscape-card">
-                    <div class="app-icon">
-                        <span>✨</span>
-                    </div>
-                    <div class="app-info">
-                        <h3>FeelScape</h3>
-                        <p>Track your mood. Get affirmations written just for you. AI-powered personalized affirmations based on 50+ moods — because generic just doesn't cut it.</p>
-                        <div class="app-tags">
-                            <span>Mood Tracking</span>
-                            <span>AI Affirmations</span>
-                            <span>Wellness</span>
-                            <span>Self-Care</span>
+            <article class="card card-hover app-card reveal">
+                <div class="app-card-body">
+                    <div class="app-head">
+                        <img src="/feelscape/images/logo/feelscape-icon.png" alt="" width="64" height="64" class="app-icon">
+                        <div>
+                            <h3 class="h3" style="font-size:1.35rem">FeelScape</h3>
+                            <p class="sub">Free on iOS and Android</p>
                         </div>
                     </div>
-                    <div class="app-arrow">→</div>
-                </a>
-
-                <a href="sealdocs.html" class="app-card sealdocs-card">
-                    <div class="app-icon" style="background: linear-gradient(135deg, #FF6B9D 0%, #E84D7F 100%);">
-                        <span>🔒</span>
+                    <h4 class="display h2">Affirmations written for exactly how you feel.</h4>
+                    <p class="lead">Log your mood in 30 seconds and get affirmations written for that feeling, on that day, by an AI that remembers what you tell it. No streaks, no guilt, no quote library.</p>
+                    <div class="tags">
+                        <span class="tag teal">Mood tracker</span><span class="tag teal">AI affirmations</span><span class="tag teal">50 moods</span><span class="tag teal">37 languages</span>
                     </div>
-                    <div class="app-info">
-                        <h3>SealDocs</h3>
-                        <p>Your documents, your device, always secure. A privacy-first document vault with smart expiry tracking, AI assistant, and encrypted local storage.</p>
-                        <div class="app-tags">
-                            <span>Document Vault</span>
-                            <span>Privacy-First</span>
-                            <span>Smart Reminders</span>
-                            <span>AI Assistant</span>
+                    <div class="btn-row" style="margin-top:6px">
+                        <a href="/feelscape/" class="btn btn-brand">Explore FeelScape</a>
+                        <a href="/feelscape/download/" class="text-link">Download free →</a>
+                    </div>
+                </div>
+                <div class="app-card-media fs">
+                    <div class="phone">
+                        <img src="/feelscape/images/screenshots/screen-2-640.webp" width="640" height="1270" alt="FeelScape mood picker with coloured mood circles" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </article>
+
+            <article class="card card-hover app-card flip reveal" style="margin-top:24px">
+                <div class="app-card-body">
+                    <div class="app-head">
+                        <img src="/assets/sealdocs-icon.png" alt="" width="64" height="64" class="app-icon">
+                        <div>
+                            <h3 class="h3" style="font-size:1.35rem">SealDocs</h3>
+                            <p class="sub">Coming soon to iOS and Android</p>
                         </div>
                     </div>
-                    <div class="app-arrow">→</div>
-                </a>
-            </div>
+                    <h4 class="display h2">A private vault for the documents that matter.</h4>
+                    <p class="lead">Passports, insurance, pet records, licences. Stored encrypted on your device, organised by person, with a reminder before anything expires. Nothing leaves your phone unless you say so.</p>
+                    <div class="tags">
+                        <span class="tag pink">Document vault</span><span class="tag pink">Local-first</span><span class="tag pink">Expiry reminders</span><span class="tag pink">37+ document types</span>
+                    </div>
+                    <div class="btn-row" style="margin-top:6px">
+                        <a href="/sealdocs.html" class="btn btn-pink">Meet SealDocs</a>
+                        <a href="/sealdocs.html#faq" class="text-link pink">Read the FAQ →</a>
+                    </div>
+                </div>
+                <div class="app-card-media sd">
+                    <img src="/assets/sealy-waving.png" width="480" height="480" alt="Sealy, the SealDocs mascot, waving" class="sealy" loading="lazy" decoding="async">
+                </div>
+            </article>
         </div>
     </section>
 
-    <section id="philosophy" class="philosophy-section">
+    <section id="about" class="section bg-elevated" aria-labelledby="about-heading">
         <div class="container">
-            <div class="philosophy-content">
-                <h2>The Philosophy</h2>
-                <blockquote>
-                    "The best code is written when you're not thinking about code. It's written when you're thinking about the person who'll use it, the problem it solves, the moment of delight when everything just works."
-                </blockquote>
-                <p>Vibe coding isn't about being lazy or unstructured. It's about trusting the creative process, respecting your energy, and building things that genuinely matter. It's the antidote to burnout culture in tech.</p>
+            <div class="section-head reveal">
+                <p class="eyebrow">How things get made here</p>
+                <h2 id="about-heading" class="display h2">A few rules I don't break.</h2>
+            </div>
+            <div class="grid grid-4">
+                <div class="card card-pad principle reveal">
+                    <span class="n">01 — Feel first</span>
+                    <h3 class="h3">Start with how it should feel</h3>
+                    <p>Every app begins with the moment someone opens it. The code follows that, not the other way round.</p>
+                </div>
+                <div class="card card-pad principle reveal">
+                    <span class="n">02 — Private by default</span>
+                    <h3 class="h3">Your data stays yours</h3>
+                    <p>SealDocs keeps documents on your device. FeelScape never sells your moods. Anything that leaves your phone is something you chose.</p>
+                </div>
+                <div class="card card-pad principle reveal">
+                    <span class="n">03 — No guilt</span>
+                    <h3 class="h3">No streaks, no nagging</h3>
+                    <p>FeelScape dropped streaks on purpose. An app should be glad to see you, not keep score of when you left.</p>
+                </div>
+                <div class="card card-pad principle reveal">
+                    <span class="n">04 — One person</span>
+                    <h3 class="h3">Real replies</h3>
+                    <p>Every support email lands with the person who built the app. Usually answered within a day or two.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="section" aria-label="Philosophy">
+        <div class="container container-narrow" style="text-align:center">
+            <p class="quote reveal">“Good software comes from thinking about the person on the other side of the screen, not about the software.”</p>
+            <p class="quote-by reveal">The only mission statement this studio has</p>
+        </div>
+    </section>
+
+    <section class="section section-tight" aria-labelledby="cta-heading">
+        <div class="container">
+            <div class="cta-card bg-dawn reveal">
+                <div class="drift" style="top:-100px;right:-100px;width:320px;height:320px;background:color-mix(in srgb, var(--lavender) 30%, transparent)"></div>
+                <div class="drift" style="bottom:-100px;left:-60px;width:280px;height:280px;background:color-mix(in srgb, var(--teal) 25%, transparent);animation-delay:-9s"></div>
+                <div class="inner">
+                    <h2 id="cta-heading" class="display h2">Questions, ideas, bugs?</h2>
+                    <p class="lead">Write to <a href="mailto:vibeandcode@gmail.com" class="text-link">vibeandcode@gmail.com</a>. It reaches the person who made the apps, and replies usually take a day or two.</p>
+                    <div class="btn-row center">
+                        <a href="/support.html" class="btn btn-primary">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <a href="index.html" class="logo">vibe<span>&</span>code</a>
-                <p>Built with flow, shipped with love.</p>
-                <div class="legal-links">
-                    <a href="/feelscape/privacy/">FeelScape Privacy</a>
-                    <span class="divider">•</span>
-                    <a href="sealdocs-privacy.html">SealDocs Privacy</a>
-                    <span class="divider">•</span>
-                    <a href="/feelscape/terms/">Terms</a>
-                    <span class="divider">•</span>
-                    <a href="support.html">Support</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="wordmark" aria-label="vibe&amp;code home">vibe<em>&amp;</em>code</a>
+                    <p>Small, careful apps for iPhone and Android, made by one person who reads every email.</p>
                 </div>
+                <div>
+                    <h4>Apps</h4>
+                    <ul>
+                        <li><a href="/feelscape/">FeelScape</a></li>
+                        <li><a href="/sealdocs.html">SealDocs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/support.html">Support</a></li>
+                        <li><a href="mailto:vibeandcode@gmail.com">vibeandcode@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/feelscape/privacy/">FeelScape privacy</a></li>
+                        <li><a href="/feelscape/terms/">FeelScape terms</a></li>
+                        <li><a href="/sealdocs-privacy.html">SealDocs privacy</a></li>
+                        <li><a href="/sealdocs-terms.html">SealDocs terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 vibe&amp;code. vibe&amp;code is an independent studio. FeelScape and SealDocs are its apps.</p>
+                <p><a href="/support.html">Support</a> · <a href="mailto:vibeandcode@gmail.com">vibeandcode@gmail.com</a></p>
             </div>
         </div>
     </footer>
+    <script>
+    (() => {
+        document.documentElement.classList.add('js');
+        // Mobile menu
+        const btn = document.getElementById('nav-toggle'), menu = document.getElementById('nav-mobile');
+        const mi = document.getElementById('menu-icon'), ci = document.getElementById('close-icon');
+        btn?.addEventListener('click', () => {
+            const open = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', String(open));
+            mi.hidden = open; ci.hidden = !open;
+        });
+        // Reveal on scroll. Everything is visible without JS, and as a safety
+        // net everything is revealed after 1.5s regardless, so landing on an
+        // anchor like /#about never leaves the sections above it blank.
+        const els = document.querySelectorAll('.reveal');
+        const showAll = () => els.forEach((el) => el.classList.add('in'));
+        if (els.length && 'IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+            }, { rootMargin: '0px 0px -6% 0px', threshold: 0.02 });
+            els.forEach((el) => io.observe(el));
+            setTimeout(showAll, 1500);
+        } else {
+            showAll();
+        }
+    })();
+    </script>
 </body>
 </html>
