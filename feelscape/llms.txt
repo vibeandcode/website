@@ -2,18 +2,18 @@
 
 > FeelScape: AI Affirmations is a free iOS and Android app that writes affirmations for how you feel. You log one or more of 50 moods, optionally add a note, and FeelAI generates affirmations for that exact state. Premium adds FeelAI Memory, an editable profile of your values, goals and stressors that makes every affirmation about your life. Made by vibe&code.
 
-Key facts: 50 moods in 7 categories; 37 languages; free tier gives 5 affirmations per check-in; Premium ($4.99/month or $39.99/year, 3-day free trial) gives 10 memory-aware affirmations per check-in, proactive check-ins, a monthly letter, unlimited check-ins and custom moods. No streaks by design. Not a medical device.
+Key facts: 50 moods in 7 categories; 37 languages; free tier gives 3 affirmations per check-in; Premium ($4.99/month or $39.99/year, 3-day free trial) gives 10 memory-aware affirmations per check-in, proactive check-ins, a monthly letter, unlimited check-ins and custom moods. No streaks by design. Not a medical device.
 
 ## Key pages
 
-- [Home](https://vibeandcode.com/feelscape/): What FeelScape does and an interactive mood picker
-- [Affirmation library](https://vibeandcode.com/feelscape/affirmations/): Curated affirmations for 49 moods, ten each, with guidance on when and how to use them
-- [Premium](https://vibeandcode.com/feelscape/premium/): Pricing and what FeelAI Memory adds
-- [Features](https://vibeandcode.com/feelscape/features/): Mood tracker, FeelAI Memory, check-ins, widget
-- [FAQ](https://vibeandcode.com/feelscape/faq/): Pricing, privacy, cancelling, languages
-- [Compare](https://vibeandcode.com/feelscape/compare/): Honest comparisons with I Am, ThinkUp, Daylio and How We Feel
-- [Blog](https://vibeandcode.com/feelscape/blog/): Research-aware writing on affirmations and mood
-- [Download](https://vibeandcode.com/feelscape/download/): App Store and Google Play links
+- [Home](https://vibeandcode.app/feelscape/): What FeelScape does and an interactive mood picker
+- [Affirmation library](https://vibeandcode.app/feelscape/affirmations/): Curated affirmations for 49 moods, ten each, with guidance on when and how to use them
+- [Premium](https://vibeandcode.app/feelscape/premium/): Pricing and what FeelAI Memory adds
+- [Features](https://vibeandcode.app/feelscape/features/): Mood tracker, FeelAI Memory, check-ins, widget
+- [FAQ](https://vibeandcode.app/feelscape/faq/): Pricing, privacy, cancelling, languages
+- [Compare](https://vibeandcode.app/feelscape/compare/): Honest comparisons with I Am, ThinkUp, Daylio and How We Feel
+- [Blog](https://vibeandcode.app/feelscape/blog/): Research-aware writing on affirmations and mood
+- [Download](https://vibeandcode.app/feelscape/download/): App Store and Google Play links
 
 ## Store links
 

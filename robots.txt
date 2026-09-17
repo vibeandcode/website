@@ -56,5 +56,5 @@ Disallow: /
 User-agent: omgili
 Disallow: /
 
-Sitemap: https://vibeandcode.com/sitemap.xml
-Sitemap: https://vibeandcode.com/feelscape/sitemap-index.xml
+Sitemap: https://vibeandcode.app/sitemap.xml
+Sitemap: https://vibeandcode.app/feelscape/sitemap-index.xml
