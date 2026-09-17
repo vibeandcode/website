@@ -51,6 +51,8 @@ def head(title, description, path, og_title=None, og_desc=None, extra=""):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Google Search Console ownership (also set in the FeelScape site's BaseLayout) -->
+    <meta name="google-site-verification" content="V8AIMkkVxl_7GxqgDzSyBO-XaUtjMIFE-FvMp14fZXE">
     <title>{title}</title>
     <meta name="description" content="{description}">
     <meta name="author" content="vibe&code">
